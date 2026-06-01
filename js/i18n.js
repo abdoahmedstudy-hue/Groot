@@ -84,6 +84,18 @@
       ctaText: 'مساحة مرنة للمذاكرة، الاجتماعات، الكورسات، والتركيز الفردي.',
       ctaBtn: 'احجز الآن',
 
+      // FAQ
+      faqEyebrow: 'أسئلة سريعة',
+      faqTitle: 'معلومات مباشرة عن Groot Workspace',
+      faqQ1: 'ما هو Groot Workspace؟',
+      faqA1: 'Groot Workspace هو مساحة عمل ومذاكرة مشتركة في المنصورة، مصر، مناسبة للطلاب، الفريلانسرز، الفرق، الاجتماعات، الورش، والكورسات.',
+      faqQ2: 'أين يقع Groot Workspace؟',
+      faqA2: 'يقع Groot Workspace في 57 شارع الصديق، متفرع من شارع أحمد ماهر، حي الجامعة، المنصورة، أمام بوابة القرية الأولمبية.',
+      faqQ3: 'ما أسعار Groot Workspace؟',
+      faqA3: 'تبدأ الأسعار من 20 EGP لأول ساعة، 35 EGP لساعتين، 50 EGP لثلاث ساعات، 65 EGP من 4 إلى 8 ساعات، و160 EGP لليوم الكامل.',
+      faqQ4: 'ما المساحات المتاحة داخل Groot Workspace؟',
+      faqA4: 'تشمل المساحات المتاحة مساحة عمل مشتركة، قاعة اجتماعات، قاعة كورسات ومحاضرات، وركن تركيز فردي للمهام الطويلة.',
+
       // Footer
       footerDesc: 'مساحة عمل مشتركة في المنصورة، مصر. مجتمع يعيش الإبداع منذ 2015.',
       footerLinks: 'روابط سريعة',
@@ -211,6 +223,18 @@
       ctaTitle: 'Start Your Day at Groot',
       ctaText: 'Flexible spaces for studying, meetings, courses, and focused work.',
       ctaBtn: 'Book Now',
+
+      // FAQ
+      faqEyebrow: 'Quick Answers',
+      faqTitle: 'Direct Information About Groot Workspace',
+      faqQ1: 'What is Groot Workspace?',
+      faqA1: 'Groot Workspace is a co-working and study space in Mansoura, Egypt, for students, freelancers, teams, meetings, workshops, and courses.',
+      faqQ2: 'Where is Groot Workspace located?',
+      faqA2: 'Groot Workspace is located at 57 El-Seddik Street, off Ahmed Maher Street, University District, Mansoura, in front of the Olympic Village gate.',
+      faqQ3: 'How much does Groot Workspace cost?',
+      faqA3: 'Pricing starts at 20 EGP for the first hour, 35 EGP for two hours, 50 EGP for three hours, 65 EGP for four to eight hours, and 160 EGP for a full day.',
+      faqQ4: 'What spaces are available at Groot Workspace?',
+      faqA4: 'Groot Workspace offers a shared workspace, meeting room, lecture hall for courses and workshops, and a quiet focus corner for individual work.',
 
       footerDesc: 'Co-working space in Mansoura, Egypt. A creative community since 2015.',
       footerLinks: 'Quick Links',

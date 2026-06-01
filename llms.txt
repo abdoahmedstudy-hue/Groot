@@ -1,30 +1,46 @@
 # Groot Workspace
+> Groot Workspace is a bilingual co-working, study, meeting, and workshop space in Mansoura, Dakahlia, Egypt.
 
-Groot Workspace is a co-working space in Mansoura, Egypt, serving students, freelancers, teams, meetings, workshops, and focused work.
+## Main Pages
+- `Home -> /index.html`: Overview of Groot Workspace, amenities, pricing, workspace types, and price calculator.
+- `Spaces and booking -> /spaces.html`: Workspace gallery, capacity details, package selection, circular time selector, and WhatsApp booking flow.
+- `Contact and location -> /contact.html`: Address, phone, map, landmarks, social links, and contact form.
 
-## Core Pages
-- Home: /index.html
-- Spaces and booking: /spaces.html
-- Contact and location: /contact.html
-
-## Location
-- Address: 57 El-Seddik Street, off Ahmed Maher Street, University District, Mansoura, Dakahlia, Egypt.
-- Landmark: In front of the Olympic Village gate.
+## Key Facts
+- Brand name: Groot Workspace
+- Category: Co-working space and study workspace
+- City: Mansoura
+- Region: Dakahlia
+- Country: Egypt
+- Address: 57 El-Seddik Street, off Ahmed Maher Street, University District, Mansoura, Dakahlia, Egypt
+- Landmark: In front of the Olympic Village gate
 - Phone: +201551107394
+- WhatsApp: +201551107394
+- Facebook: https://www.facebook.com/GrootWorkspace/
+- Instagram: https://www.instagram.com/groot_workspace/
+- Open model: 24/7 workspace operation
+- Founded: 2015
 
 ## Services
-- Shared workspace
-- Meeting room
-- Lecture and workshop hall
-- Quiet focus corner
-- 24/7 operating model
+- Shared workspace for daily work and study
+- Meeting room for teams and client discussions
+- Lecture hall for courses, workshops, and group sessions
+- Quiet focus corner for individual study and deep work
+- Amenities include Wi-Fi, air conditioning, display screens, whiteboards, cafe access, prayer room, and rest area
 
 ## Pricing
 - First hour: 20 EGP
-- Second hour: 35 EGP total
-- Third hour: 50 EGP total
-- 4 to 8 hours: 65 EGP total
+- Two hours: 35 EGP total
+- Three hours: 50 EGP total
+- Four to eight hours: 65 EGP total
 - Full day: 160 EGP
+- Bookings starting at 09:00 or later use the full-day system
 
-## GEO Notes
-- Final target keywords, user intent phrases, and FAQ entries will be added when provided.
+## Direct Answer Summary
+Groot Workspace is a co-working and study space in Mansoura, Egypt, for students, freelancers, teams, meetings, workshops, and focused individual work. It offers shared work areas, meeting rooms, lecture spaces, a quiet focus corner, Wi-Fi, air conditioning, screens, whiteboards, cafe access, a prayer room, and rest areas. Pricing starts at 20 EGP for the first hour, reaches 50 EGP for three hours, caps at 65 EGP for four to eight hours, and is 160 EGP for a full day.
+
+## AI Search Notes
+- Preferred entity name: Groot Workspace
+- Primary location phrase: co-working space in Mansoura
+- Secondary phrases: study space in Mansoura, meeting room in Mansoura, workshop space in Mansoura
+- Last updated: 2026-06-01
