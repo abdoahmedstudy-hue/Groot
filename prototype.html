@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Groot Workspace | نماذج الموقع</title>
+  <meta name="description" content="نموذج واجهة متجاوب لموقع Groot Workspace. استعراض جميع الشاشات.">
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages/prototype.css">
+</head>
+<body>
+  <div class="proto-shell">
+    <!-- Top Bar -->
+    <div class="proto-topbar">
+      <div class="proto-brand">
+        <div class="proto-mark">G</div>
+        <span class="proto-brand__text">Groot Workspace</span>
+      </div>
+      <div class="lang-toggle">
+        <button data-lang="ar" class="active">AR</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="proto-grid">
+      <!-- Intro Panel -->
+      <div class="proto-intro page-enter">
+        <span class="eyebrow" data-i18n="protoKicker">نموذج واجهة متجاوب</span>
+        <h1 data-i18n="protoTitle">مساحة تنمو فيها الفكرة.</h1>
+        <p class="lead" data-i18n="protoLead">Groot ليست مجرد مكان للعمل، بل مجتمع يعيش الإبداع ويؤمن أن النجاح أجمل عندما يحدث وسط ناس تشبه حلمك.</p>
+
+        <div class="proto-actions">
+          <a class="btn btn--primary btn--lg" href="index.html" data-i18n="protoOpen">افتح الموقع</a>
+          <a class="btn btn--gold btn--lg" href="spaces.html" data-i18n="protoBook">جرّب الحجز</a>
+        </div>
+
+        <div class="proto-metrics">
+          <div class="proto-metric">
+            <div class="proto-metric__value">2015</div>
+            <div class="proto-metric__label">بداية الحكاية</div>
+          </div>
+          <div class="proto-metric">
+            <div class="proto-metric__value">24/7</div>
+            <div class="proto-metric__label">عمل طوال الأسبوع</div>
+          </div>
+          <div class="proto-metric">
+            <div class="proto-metric__value">45</div>
+            <div class="proto-metric__label">سعة تشغيلية</div>
+          </div>
+        </div>
+
+        <div class="proto-note" data-i18n="protoNote">كل شاشة ملف مستقل وجاهزة للتحويل إلى مكونات.</div>
+      </div>
+
+      <!-- Screen Cards -->
+      <div class="proto-screens page-enter-delay">
+        <a class="screen-card" href="index.html">
+          <div class="screen-card__badge">01</div>
+          <div class="screen-card__info">
+            <div class="screen-card__title">Landing Page</div>
+            <div class="screen-card__desc">الصفحة الرئيسية مع تأثيرات 3D وعرض المساحات والأسعار</div>
+          </div>
+          <div class="screen-card__arrow">→</div>
+        </a>
+
+        <a class="screen-card" href="spaces.html">
+          <div class="screen-card__badge">02</div>
+          <div class="screen-card__info">
+            <div class="screen-card__title">Spaces & Booking</div>
+            <div class="screen-card__desc">استعراض المساحات مع نظام حجز تفاعلي كامل</div>
+          </div>
+          <div class="screen-card__arrow">→</div>
+        </a>
+
+        <a class="screen-card" href="admin.html">
+          <div class="screen-card__badge">03</div>
+          <div class="screen-card__info">
+            <div class="screen-card__title">Admin Dashboard</div>
+            <div class="screen-card__desc">لوحة تحكم محمية بكلمة مرور لإدارة كاملة</div>
+          </div>
+          <div class="screen-card__arrow">→</div>
+        </a>
+
+        <a class="screen-card" href="contact.html">
+          <div class="screen-card__badge">04</div>
+          <div class="screen-card__info">
+            <div class="screen-card__title">Contact & Location</div>
+            <div class="screen-card__desc">خريطة Google Maps مباشرة ومعلومات التواصل</div>
+          </div>
+          <div class="screen-card__arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Groot Workspace | مساحة عمل مشتركة في المنصورة</title>
+  <meta name="description" content="Groot Workspace - مساحة عمل مشتركة في المنصورة، مصر. مجتمع يعيش الإبداع منذ 2015. مفتوح 24/7.">
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+</head>
+<body>
+  <!-- ── Navbar ──────────────────────────────────────── -->
+  <header class="navbar">
+    <nav class="navbar__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/images/logo.png" alt="Groot Logo">
+        <span>Groot Workspace</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="navHome">الرئيسية</a></li>
+        <li><a href="spaces.html" data-i18n="navSpaces">المساحات والحجز</a></li>
+        <li><a href="contact.html" data-i18n="navContact">التواصل والموقع</a></li>
+        <li><a href="admin.html" data-i18n="navAdmin">لوحة التحكم</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button data-lang="ar" class="active">AR</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <button class="hamburger" aria-label="القائمة"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+  <nav class="mobile-nav">
+    <a href="index.html" data-i18n="navHome">الرئيسية</a>
+    <a href="spaces.html" data-i18n="navSpaces">المساحات والحجز</a>
+    <a href="contact.html" data-i18n="navContact">التواصل والموقع</a>
+    <a href="admin.html" data-i18n="navAdmin">لوحة التحكم</a>
+    <div class="lang-toggle" style="margin-top:16px"><button data-lang="ar" class="active">AR</button><button data-lang="en">EN</button></div>
+  </nav>
+
+  <main>
+    <!-- ── Hero Section ──────────────────────────────── -->
+    <section class="hero shell" id="hero">
+      <div class="hero__content page-enter">
+        <span class="eyebrow" data-i18n="heroEyebrow">مساحة عمل مشتركة في المنصورة</span>
+        <h1 data-i18n="heroTitle">مساحة تنمو فيها الفكرة.</h1>
+        <p class="lead" data-i18n="heroLead">Groot مش بس مكان تشتغل فيه.. دي Community بتعيش الإبداع، وتؤمن إن النجاح أجمل لما بيحصل وسط ناس بتشبه حلمك.</p>
+        <div class="actions">
+          <a class="btn btn--primary btn--lg" href="spaces.html" data-i18n="heroCta1">استعرض المساحات</a>
+          <a class="btn btn--gold btn--lg" href="spaces.html#bookingPanel" data-i18n="heroCta2">ابدأ الحجز</a>
+          <a class="btn btn--lg" href="contact.html" data-i18n="heroCta3">العنوان والتواصل</a>
+        </div>
+      </div>
+      <aside class="hero__visual page-enter-delay">
+        <div class="hero-glass">
+          <div class="glass-panel">
+            <h2 data-i18n="heroGlassTitle">Groot مش مجرد مكان للعمل.</h2>
+            <p data-i18n="heroGlassText">مجتمع يعيش الإبداع ويؤمن أن النجاح أجمل، مع مساحات مرنة للمذاكرة، الاجتماعات، الكورسات، والتركيز الفردي.</p>
+            <div class="quick-stats">
+              <div class="quick-stats__item"><span class="quick-stats__value" data-count="24" data-count-suffix="/7">0</span><span class="quick-stats__label" data-i18n="stat247">تشغيل دائم</span></div>
+              <div class="quick-stats__item"><span class="quick-stats__value" data-count="45">0</span><span class="quick-stats__label" data-i18n="stat45">أقصى سعة</span></div>
+              <div class="quick-stats__item"><span class="quick-stats__value" data-count="2015">0</span><span class="quick-stats__label" data-i18n="stat2015">بداية الرحلة</span></div>
+              <div class="quick-stats__item"><span class="quick-stats__value">65 EGP</span><span class="quick-stats__label" data-i18n="stat65">باقة 8 ساعات</span></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ── About Section ─────────────────────────────── -->
+    <section class="section shell" id="about">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="eyebrow" data-i18n="aboutTitle">عن Groot Workspace</span>
+          <h2 data-i18n="aboutHeading">من 2015 واحنا مجتمع عمل في المنصورة بيكبر مع أصحابه.</h2>
+          <p data-i18n="aboutText">كل زاوية شهدت بداية مشروع، حلم، أو فكرة اتولدت واتحققت. مكان تتطور وتكبر فيه الحكايات الجديدة.</p>
+          <div class="about-counter">
+            <span class="about-counter__number" data-count="10">0</span>
+            <span style="font-size:1.2rem;font-weight:800" data-i18n="aboutYears">+ سنوات من الإبداع</span>
+          </div>
+        </div>
+        <div class="about-gallery reveal delay-2" aria-label="صور Groot Workspace">
+          <figure class="about-gallery__featured">
+            <img src="assets/images/shared-1.jpg" alt="مساحة مشتركة داخل Groot Workspace" loading="lazy">
+          </figure>
+          <div class="photo-strip" role="list">
+            <button class="photo-strip__item active" type="button" data-full="assets/images/shared-1.jpg" data-alt="مساحة مشتركة داخل Groot Workspace"><img src="assets/images/shared-1.jpg" alt="مساحة مشتركة" loading="lazy"></button>
+            <button class="photo-strip__item" type="button" data-full="assets/images/meeting-1.jpg" data-alt="قاعة اجتماعات داخل Groot Workspace"><img src="assets/images/meeting-1.jpg" alt="قاعة اجتماعات" loading="lazy"></button>
+            <button class="photo-strip__item" type="button" data-full="assets/images/coffee.jpg" data-alt="منطقة الكافيه داخل Groot Workspace"><img src="assets/images/coffee.jpg" alt="كافيه" loading="lazy"></button>
+            <button class="photo-strip__item" type="button" data-full="assets/images/lecture.jpg" data-alt="قاعة محاضرات داخل Groot Workspace"><img src="assets/images/lecture.jpg" alt="قاعة محاضرات" loading="lazy"></button>
+            <button class="photo-strip__item" type="button" data-full="assets/images/lounge.jpg" data-alt="منطقة راحة داخل Groot Workspace"><img src="assets/images/lounge.jpg" alt="منطقة راحة" loading="lazy"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Spaces Preview ────────────────────────────── -->
+    <section class="section shell" id="spaces">
+      <div class="section__header">
+        <div>
+          <span class="eyebrow" data-i18n="spacesTitle">المساحات</span>
+          <h2 data-i18n="spacesSubtitle">اختر المساحة المناسبة لاحتياجاتك</h2>
+        </div>
+        <a class="btn" href="spaces.html" data-i18n="exploreMore">اكتشف المزيد</a>
+      </div>
+      <div class="spaces-grid">
+        <a class="space-preview reveal delay-1" href="spaces.html">
+          <div class="space-preview__img"><img src="assets/images/shared-1.jpg" alt="مساحة العمل المشتركة" loading="lazy"></div>
+          <div class="space-preview__body">
+            <div class="space-preview__name" data-i18n="previewSharedName">مساحة العمل المشتركة</div>
+            <p data-i18n="previewSharedText">مقاعد مرنة للمذاكرة والعمل اليومي</p>
+            <div class="space-preview__meta"><span class="tag" data-i18n="previewSharedCapacity">18 شخص</span><span class="pill pill--soft" data-i18n="previewSharedUse">عمل يومي</span></div>
+          </div>
+        </a>
+        <a class="space-preview reveal delay-2" href="spaces.html">
+          <div class="space-preview__img"><img src="assets/images/meeting-1.jpg" alt="قاعة الاجتماعات" loading="lazy"></div>
+          <div class="space-preview__body">
+            <div class="space-preview__name" data-i18n="previewMeetingName">قاعة الاجتماعات</div>
+            <p data-i18n="previewMeetingText">طاولة مركزية وشاشة عرض للفرق</p>
+            <div class="space-preview__meta"><span class="tag" data-i18n="previewMeetingCapacity">10 شخص</span><span class="pill pill--soft" data-i18n="previewMeetingUse">فرق وعروض</span></div>
+          </div>
+        </a>
+        <a class="space-preview reveal delay-3" href="spaces.html">
+          <div class="space-preview__img"><img src="assets/images/lecture.jpg" alt="قاعة الكورسات" loading="lazy"></div>
+          <div class="space-preview__body">
+            <div class="space-preview__name" data-i18n="previewLectureName">قاعة الكورسات</div>
+            <p data-i18n="previewLectureText">تخطيط واسع للورش والمحاضرات</p>
+            <div class="space-preview__meta"><span class="tag" data-i18n="previewLectureCapacity">32 شخص</span><span class="pill pill--soft" data-i18n="previewLectureUse">ورش ومحاضرات</span></div>
+          </div>
+        </a>
+        <a class="space-preview reveal delay-4" href="spaces.html">
+          <div class="space-preview__img"><img src="assets/images/private.jpg" alt="ركن التركيز" loading="lazy"></div>
+          <div class="space-preview__body">
+            <div class="space-preview__name" data-i18n="previewFocusName">ركن التركيز الفردي</div>
+            <p data-i18n="previewFocusText">زوايا هادئة للمهام الطويلة</p>
+            <div class="space-preview__meta"><span class="tag" data-i18n="previewFocusCapacity">6 شخص</span><span class="pill pill--soft" data-i18n="previewFocusUse">إنجاز هادئ</span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── Amenities ─────────────────────────────────── -->
+    <section class="section shell" id="amenities">
+      <div class="section__header">
+        <div><h2 data-i18n="amenitiesTitle">المميزات</h2></div>
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity-card reveal delay-1">
+          <div class="amenity-card__icon"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
+          <span class="amenity-card__name" data-i18n="amenWifi">إنترنت فائق السرعة</span>
+        </div>
+        <div class="amenity-card reveal delay-2">
+          <div class="amenity-card__icon"><svg viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></div>
+          <span class="amenity-card__name" data-i18n="amenAC">تكييف هواء</span>
+        </div>
+        <div class="amenity-card reveal delay-3">
+          <div class="amenity-card__icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg></div>
+          <span class="amenity-card__name" data-i18n="amenProjector">شاشات عرض</span>
+        </div>
+        <div class="amenity-card reveal delay-4">
+          <div class="amenity-card__icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18"/></svg></div>
+          <span class="amenity-card__name" data-i18n="amenWhiteboard">سبورات بيضاء</span>
+        </div>
+        <div class="amenity-card reveal delay-5">
+          <div class="amenity-card__icon"><svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zm6-6v2m4-2v2m4-2v2"/></svg></div>
+          <span class="amenity-card__name" data-i18n="amenCafe">كافيه داخلي</span>
+        </div>
+        <div class="amenity-card reveal delay-6">
+          <div class="amenity-card__icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <span class="amenity-card__name" data-i18n="amenPrayer">مكان للصلاة</span>
+        </div>
+        <div class="amenity-card reveal delay-7">
+          <div class="amenity-card__icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <span class="amenity-card__name" data-i18n="amenRest">مكان للراحة</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Pricing ────────────────────────────────────── -->
+    <section class="section shell" id="pricing">
+      <div class="section__header">
+        <div>
+          <span class="eyebrow" data-i18n="pricingTitle">الأسعار</span>
+          <h2 data-i18n="pricingSubtitle">أسعار مرنة تناسب احتياجاتك</h2>
+        </div>
+      </div>
+      <div class="pricing-cards">
+        <div class="price-card reveal delay-1">
+          <div class="price-card__label" data-i18n="priceFirstHour">أول ساعة</div>
+          <span class="price-card__amount" data-price-id="first">20</span>
+          <p>EGP</p>
+        </div>
+        <div class="price-card reveal delay-2">
+          <div class="price-card__label" data-i18n="priceExtraHour">كل ساعة إضافية</div>
+          <span class="price-card__amount" data-price-id="extra">15</span>
+          <p>EGP</p>
+        </div>
+        <div class="price-card price-card--featured reveal delay-3">
+          <div class="price-card__label" data-i18n="price8h">باقة 8 ساعات</div>
+          <span class="price-card__amount" data-price-id="pkg8">65</span>
+          <p>EGP</p>
+          <span class="pill pill--gold" style="margin-top:8px" data-i18n="bestValue">الأفضل قيمة</span>
+        </div>
+        <div class="price-card reveal delay-4">
+          <div class="price-card__label" data-i18n="priceDay">يوم كامل</div>
+          <span class="price-card__amount" data-price-id="day">160</span>
+          <p>EGP</p>
+        </div>
+      </div>
+      <!-- Calculator -->
+      <div class="calc-box reveal">
+        <h3 data-i18n="calcTitle">حاسبة الأسعار</h3>
+        <label class="form-label" data-i18n="calcHours">عدد الساعات</label>
+        <div style="display:flex;align-items:center;gap:12px">
+          <input type="range" id="priceSlider" class="calc-slider" min="1" max="10" value="3" style="flex:1">
+          <span id="calcHours" style="font-weight:900;font-size:1.2rem;min-width:30px;text-align:center">3</span>
+        </div>
+        <div class="calc-result">
+          <span data-i18n="calcResult">السعر المتوقع</span>
+          <span class="calc-result__price" id="calcPrice">50 EGP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA Banner ────────────────────────────────── -->
+    <section class="section shell">
+      <div class="cta-banner reveal">
+        <h2 data-i18n="ctaTitle">ابدأ يومك في Groot</h2>
+        <p data-i18n="ctaText">مساحة مرنة للمذاكرة، الاجتماعات، الكورسات، والتركيز الفردي.</p>
+        <a class="btn btn--gold btn--lg" href="spaces.html#bookingPanel" data-i18n="ctaBtn">احجز الآن</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand"><img src="assets/images/logo.png" alt="Groot"><span>Groot Workspace</span></div>
+        <p data-i18n="footerDesc">مساحة عمل مشتركة في المنصورة، مصر. مجتمع يعيش الإبداع منذ 2015.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footerLinks">روابط سريعة</h4>
+        <ul class="footer__links">
+          <li><a href="index.html" data-i18n="navHome">الرئيسية</a></li>
+          <li><a href="spaces.html" data-i18n="navSpaces">المساحات والحجز</a></li>
+          <li><a href="contact.html" data-i18n="navContact">التواصل والموقع</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footerContact">تواصل معنا</h4>
+        <ul class="footer__links">
+          <li><a href="tel:+201551107394">+201551107394</a></li>
+          <li><a href="https://www.facebook.com/GrootWorkspace/" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/groot_workspace/" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p data-i18n="footerRights">© 2025 Groot Workspace. جميع الحقوق محفوظة.</p>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/GrootWorkspace/" target="_blank" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/groot_workspace/" target="_blank" aria-label="Instagram">ig</a>
+        <a href="https://wa.me/201551107394" target="_blank" aria-label="WhatsApp">wa</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/state.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Groot Workspace",
+      "description": "مساحة عمل مشتركة في المنصورة، مصر، للمذاكرة والعمل والاجتماعات والكورسات.",
+      "url": "index.html",
+      "telephone": "+201551107394",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "57 شارع الصديق، متفرع من شارع أحمد ماهر",
+        "addressLocality": "المنصورة",
+        "addressRegion": "الدقهلية",
+        "addressCountry": "EG"
+      },
+      "sameAs": [
+        "https://www.facebook.com/GrootWorkspace/",
+        "https://www.instagram.com/groot_workspace/"
+      ]
+    }
+  </script>
+  <script src="js/app.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/scroll-animations.js"></script>
+  <script src="js/home-sync.js"></script>
+</body>
+</html>

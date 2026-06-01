@@ -1,0 +1,122 @@
+/* ============================================================
+   Groot Workspace — Design Tokens
+   All colors use oklch for perceptual uniformity.
+   ============================================================ */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* ── Brand Palette ────────────────────────────────────── */
+  --color-bg:          oklch(97% 0.012 112);
+  --color-surface:     oklch(100% 0 0 / 0.88);
+  --color-surface-alt: oklch(98% 0.012 130);
+  --color-fg:          oklch(17% 0.03 154);
+  --color-muted:       oklch(47% 0.025 150);
+  --color-border:      oklch(86% 0.025 120);
+
+  --color-accent:      oklch(42% 0.13 151);
+  --color-accent-soft: oklch(42% 0.13 151 / 0.10);
+  --color-accent-2:    oklch(59% 0.145 169);
+
+  --color-gold:        oklch(73% 0.11 84);
+  --color-gold-soft:   oklch(73% 0.11 84 / 0.12);
+
+  --color-deep:        oklch(18% 0.045 154);
+  --color-deep-2:      oklch(25% 0.065 158);
+
+  /* ── Semantic Colors ──────────────────────────────────── */
+  --color-ok:      oklch(57% 0.15 150);
+  --color-ok-bg:   oklch(57% 0.15 150 / 0.12);
+  --color-warn:    oklch(72% 0.13 75);
+  --color-warn-bg: oklch(72% 0.13 75 / 0.16);
+  --color-danger:  oklch(58% 0.18 28);
+  --color-danger-bg: oklch(58% 0.18 28 / 0.12);
+
+  /* ── Glass Effects ────────────────────────────────────── */
+  --glass-bg:      oklch(100% 0 0 / 0.08);
+  --glass-border:  oklch(100% 0 0 / 0.13);
+  --glass-blur:    blur(20px);
+
+  /* ── Typography ───────────────────────────────────────── */
+  --font-ar:    'Cairo', 'Segoe UI', Tahoma, system-ui, sans-serif;
+  --font-en:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-body:  var(--font-ar);
+  --font-display: var(--font-ar);
+
+  --fs-xs:   0.75rem;   /* 12px */
+  --fs-sm:   0.875rem;  /* 14px */
+  --fs-base: 1rem;      /* 16px */
+  --fs-md:   1.125rem;  /* 18px */
+  --fs-lg:   1.25rem;   /* 20px */
+  --fs-xl:   1.5rem;    /* 24px */
+  --fs-2xl:  2rem;      /* 32px */
+  --fs-3xl:  2.5rem;    /* 40px */
+  --fs-4xl:  3.5rem;    /* 56px */
+  --fs-5xl:  5rem;      /* 80px */
+
+  --fw-normal:   400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+  --fw-heavy:    800;
+  --fw-black:    900;
+
+  --lh-tight:   0.92;
+  --lh-heading: 1.1;
+  --lh-body:    1.75;
+
+  /* ── Spacing ──────────────────────────────────────────── */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-8:  32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-20: 80px;
+
+  /* ── Border Radius ────────────────────────────────────── */
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-pill: 999px;
+
+  /* ── Shadows ──────────────────────────────────────────── */
+  --shadow-sm:   0 4px 12px oklch(15% 0.04 150 / 0.05);
+  --shadow-md:   0 12px 30px oklch(15% 0.04 150 / 0.08);
+  --shadow-lg:   0 18px 55px oklch(15% 0.04 150 / 0.09);
+  --shadow-xl:   0 30px 80px oklch(18% 0.04 155 / 0.18);
+  --shadow-glow: 0 0 40px oklch(42% 0.13 151 / 0.15);
+
+  /* ── Easing ───────────────────────────────────────────── */
+  --ease-out:     cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-bounce:  cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth:  cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Transitions ──────────────────────────────────────── */
+  --transition-fast: 150ms var(--ease-out);
+  --transition-base: 200ms var(--ease-out);
+  --transition-slow: 350ms var(--ease-out);
+
+  /* ── Z-Index ──────────────────────────────────────────── */
+  --z-base:    1;
+  --z-sticky:  10;
+  --z-overlay: 50;
+  --z-modal:   100;
+  --z-toast:   200;
+
+  /* ── Container ────────────────────────────────────────── */
+  --container-width: 1200px;
+  --container-padding: 16px;
+}
+
+/* ── Language-specific font switching ─────────────────── */
+html[lang="en"] {
+  --font-body: var(--font-en);
+  --font-display: var(--font-en);
+}

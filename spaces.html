@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Groot Workspace | المساحات والحجز</title>
+  <meta name="description" content="استعرض مساحات العمل في Groot Workspace واحجز مكانك. مساحة مشتركة، قاعة اجتماعات، قاعة كورسات، وركن تركيز.">
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages/spaces.css">
+</head>
+<body>
+  <!-- ── Navbar ──────────────────────────────────────── -->
+  <header class="navbar">
+    <nav class="navbar__inner">
+      <a class="brand" href="index.html"><img class="brand__logo" src="assets/images/logo.png" alt="Groot Logo"><span>Groot Workspace</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="navHome">الرئيسية</a></li>
+        <li><a href="spaces.html" data-i18n="navSpaces">المساحات والحجز</a></li>
+        <li><a href="contact.html" data-i18n="navContact">التواصل والموقع</a></li>
+        <li><a href="admin.html" data-i18n="navAdmin">لوحة التحكم</a></li>
+      </ul>
+      <div class="lang-toggle"><button data-lang="ar" class="active">AR</button><button data-lang="en">EN</button></div>
+      <button class="hamburger" aria-label="القائمة"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+  <nav class="mobile-nav">
+    <a href="index.html" data-i18n="navHome">الرئيسية</a>
+    <a href="spaces.html" data-i18n="navSpaces">المساحات والحجز</a>
+    <a href="contact.html" data-i18n="navContact">التواصل والموقع</a>
+    <a href="admin.html" data-i18n="navAdmin">لوحة التحكم</a>
+    <div class="lang-toggle" style="margin-top:16px"><button data-lang="ar" class="active">AR</button><button data-lang="en">EN</button></div>
+  </nav>
+
+  <main class="shell">
+    <!-- ── Header ────────────────────────────────────── -->
+    <div class="spaces-header page-enter">
+      <h1 data-i18n="bookTitle">المساحات واضحة قبل ما تحجز.</h1>
+      <p class="lead" data-i18n="bookLead">اختر المساحة، شاهد صورها وتفاصيلها وسعتها ومزاياها، ثم أكمل الحجز عبر واتساب.</p>
+      <div class="tags">
+        <span class="tag">24/7</span>
+        <span class="tag" data-i18n="bookTagCapacity">حتى 45 شخص</span>
+        <span class="tag" data-i18n="bookTagLocation">حي الجامعة، المنصورة</span>
+      </div>
+    </div>
+
+    <!-- ── Space Tabs ────────────────────────────────── -->
+    <div id="spaceTabs" class="space-tabs"></div>
+
+    <!-- ── Two Column ────────────────────────────────── -->
+    <div class="spaces-layout">
+      <!-- Showcase -->
+      <div class="reveal">
+        <div class="showcase__main">
+          <img id="showcaseImg" src="assets/images/shared-1.jpg" alt="مساحة العمل المشتركة">
+          <div class="showcase__overlay">
+            <h2 id="showcaseName">مساحة العمل المشتركة</h2>
+            <p id="showcaseDesc">مقاعد مرنة للمذاكرة والعمل اليومي وسط إضاءة هادئة.</p>
+          </div>
+        </div>
+        <div id="showcaseThumbs" class="showcase__thumbs"></div>
+
+        <!-- Metrics -->
+        <div class="space-metrics">
+          <div class="space-metric">
+            <span class="space-metric__value" id="metricCapacity">18</span>
+            <span class="space-metric__label" data-i18n="bookCapacity">السعة المريحة</span>
+          </div>
+          <div class="space-metric">
+            <span class="space-metric__value" id="metricUse">عمل يومي</span>
+            <span class="space-metric__label" data-i18n="bookBestUse">أفضل استخدام</span>
+          </div>
+          <div class="space-metric">
+            <span class="space-metric__value" id="metricMood">متوسط</span>
+            <span class="space-metric__label" data-i18n="bookMood">الهدوء</span>
+          </div>
+        </div>
+
+        <!-- Amenities -->
+        <div class="space-amenities">
+          <h3 data-i18n="bookAmenities">المزايا داخل المساحة</h3>
+          <ul id="amenitiesList" class="space-amenities__list"></ul>
+        </div>
+      </div>
+
+      <!-- Booking Panel -->
+      <div class="booking-panel reveal delay-2" id="bookingPanel">
+        <h3 data-i18n="bookDetails">تفاصيل الحجز</h3>
+
+        <label class="form-label" data-i18n="bookDate">التاريخ</label>
+        <input type="date" id="bookDate" class="form-input">
+
+        <label class="form-label" data-i18n="bookTime">وقت البدء</label>
+        <div class="time-picker" id="timePicker">
+          <input type="hidden" id="timeInput" value="09:00">
+          <div class="time-picker__controls" aria-label="اختيار وقت البدء">
+            <button type="button" class="time-picker__nav" id="timePrev" aria-label="Previous hour">−</button>
+            <button type="button" class="time-picker__display" id="timeDisplay" aria-live="polite">09:00</button>
+            <button type="button" class="time-picker__nav" id="timeNext" aria-label="Next hour">+</button>
+          </div>
+          <div class="time-picker__period" id="timePeriod">Morning</div>
+          <div class="time-picker__quick" id="timeQuick"></div>
+        </div>
+
+        <label class="form-label" data-i18n="bookPackage">الباقة</label>
+        <div id="packageOptions" class="package-options"></div>
+
+        <label class="form-label" data-i18n="bookPeople">عدد الأشخاص</label>
+        <div class="stepper">
+          <button class="stepper__btn" id="peopleMinus">−</button>
+          <span class="stepper__value" id="peopleValue">1</span>
+          <button class="stepper__btn" id="peoplePlus">+</button>
+        </div>
+        <div class="capacity-warn" id="capacityWarn"></div>
+
+        <div class="price-quote">
+          <div class="price-quote__space" id="quoteSpace">مساحة العمل المشتركة</div>
+          <div class="price-quote__amount" id="quotePrice">65 EGP</div>
+        </div>
+
+        <div class="booking-closed" id="bookingClosed" style="display:none">
+          <p style="color:var(--color-danger);text-align:center;padding:var(--sp-3)" data-i18n="bookingClosed">الحجز مغلق حاليًا</p>
+        </div>
+        <div class="booking-actions">
+          <button class="btn btn--gold btn--block" id="bookWhatsApp" data-i18n="bookWhatsApp">احجز عبر واتساب</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand"><img src="assets/images/logo.png" alt="Groot"><span>Groot Workspace</span></div>
+        <p data-i18n="footerDesc">مساحة عمل مشتركة في المنصورة، مصر. مجتمع يعيش الإبداع منذ 2015.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footerLinks">روابط سريعة</h4>
+        <ul class="footer__links">
+          <li><a href="index.html" data-i18n="navHome">الرئيسية</a></li>
+          <li><a href="spaces.html" data-i18n="navSpaces">المساحات والحجز</a></li>
+          <li><a href="contact.html" data-i18n="navContact">التواصل والموقع</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footerContact">تواصل معنا</h4>
+        <ul class="footer__links">
+          <li><a href="tel:+201551107394">+201551107394</a></li>
+          <li><a href="https://www.facebook.com/GrootWorkspace/" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/groot_workspace/" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p data-i18n="footerRights">© 2025 Groot Workspace. جميع الحقوق محفوظة.</p>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/GrootWorkspace/" target="_blank" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/groot_workspace/" target="_blank" aria-label="Instagram">ig</a>
+        <a href="https://wa.me/201551107394" target="_blank" aria-label="WhatsApp">wa</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/state.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/scroll-animations.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

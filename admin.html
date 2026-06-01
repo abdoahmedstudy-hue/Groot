@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Groot Control | لوحة التحكم</title>
+  <meta name="description" content="لوحة تحكم Groot Workspace — إدارة الأسعار والمساحات.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages/admin.css">
+</head>
+<body>
+
+  <!-- ══════════ LOGIN OVERLAY ══════════ -->
+  <div class="login-overlay" id="loginOverlay">
+    <form class="login-card" id="loginForm">
+      <img src="assets/images/logo.png" alt="Groot">
+      <h1>Groot Control</h1>
+      <p>أدخل كلمة المرور للوصول إلى لوحة التحكم</p>
+      <input type="password" id="loginPassword" class="form-input" placeholder="كلمة المرور" autocomplete="current-password" required>
+      <button type="submit" class="btn btn--gold btn--block" id="loginBtn" style="margin-top:var(--sp-4)">تسجيل الدخول</button>
+      <div class="login-error" id="loginError"></div>
+      <div class="login-lockout" id="loginLockout"></div>
+    </form>
+  </div>
+
+  <!-- ══════════ DASHBOARD ══════════ -->
+  <div class="admin-shell locked" id="adminShell">
+
+    <!-- ── Sidebar ───────────────────────────────────── -->
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__mark">G</div>
+        <div>
+          <div class="sidebar__title">Groot Control</div>
+          <div class="sidebar__sub">لوحة تحكم المساحة</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <button data-section="pricing" class="active">Price Control <span class="badge">₪</span></button>
+        <button data-section="spaces">Workspace Control <span class="badge">4</span></button>
+      </nav>
+
+      <div class="sidebar__bottom">
+        <a href="index.html" target="_blank">فتح واجهة الموقع</a>
+        <button class="sidebar__logout" id="logoutBtn">تسجيل الخروج</button>
+        <button class="btn btn--sm" id="changePassword" style="width:100%;margin-top:8px;color:oklch(94% 0.02 130 / 0.5)">تغيير كلمة المرور</button>
+      </div>
+    </aside>
+
+    <!-- ── Main Content ──────────────────────────────── -->
+    <div class="admin-main">
+
+      <!-- Mobile sidebar toggle -->
+      <button class="btn btn--sm hamburger-admin" id="sidebarToggle" style="display:none;margin-bottom:12px">☰ القائمة</button>
+
+      <!-- ═══════ SECTION: Pricing ═══════ -->
+      <div class="admin-section active" id="section-pricing">
+        <div class="admin-panel">
+          <h3>Price Control</h3>
+          <p style="color:var(--color-muted);margin-bottom:var(--sp-4)">تعديل أسعار الساعات والباقات. التغييرات تنعكس فورًا على الموقع.</p>
+          <div class="grid-2" style="gap:var(--sp-4)">
+            <div>
+              <label class="form-label">أول ساعة (EGP)</label>
+              <input type="number" id="priceFirst" class="form-input" value="20">
+              <small style="color:var(--color-muted)">السعر عند دخول العميل</small>
+            </div>
+            <div>
+              <label class="form-label">ساعة إضافية (EGP)</label>
+              <input type="number" id="priceExtra" class="form-input" value="15">
+              <small style="color:var(--color-muted)">كل ساعة بعد الأولى</small>
+            </div>
+            <div>
+              <label class="form-label">باقة 4-8 ساعات (EGP)</label>
+              <input type="number" id="price8h" class="form-input" value="65">
+              <small style="color:var(--color-muted)">نظام الـ 8 ساعات</small>
+            </div>
+            <div>
+              <label class="form-label">يوم كامل (EGP)</label>
+              <input type="number" id="priceDay" class="form-input" value="160">
+              <small style="color:var(--color-muted)">من 9 ساعات فما فوق</small>
+            </div>
+            <div>
+              <label class="form-label">بداية اليوم الكامل</label>
+              <input type="number" id="priceFullDayStart" class="form-input" min="0" max="23" value="9">
+              <small style="color:var(--color-muted)">أي حجز يبدأ من هذه الساعة يتحول تلقائيًا ليوم كامل</small>
+            </div>
+          </div>
+          <button class="btn btn--primary" id="savePricing" style="margin-top:var(--sp-4)">حفظ الأسعار ونشرها</button>
+        </div>
+
+        <div class="admin-panel">
+          <h3>اختبار الحاسبة</h3>
+          <p style="color:var(--color-muted);margin-bottom:var(--sp-3)">حرّك المؤشر لمحاكاة السعر الذي سيراه العميل.</p>
+          <div style="display:flex;align-items:center;gap:12px">
+            <input type="range" id="calcTestSlider" class="calc-slider" min="1" max="10" value="3" style="flex:1">
+            <span id="calcTestHours" style="font-weight:900;font-size:1.4rem;min-width:40px;text-align:center">3</span>
+            <span style="color:var(--color-muted)">ساعة</span>
+          </div>
+          <div class="calc-result" style="margin-top:var(--sp-3)">
+            <span>السعر المتوقع</span>
+            <span class="calc-result__price" id="calcTestResult">50 EGP</span>
+          </div>
+        </div>
+
+        <!-- Toggles -->
+        <div class="admin-panel">
+          <h3>إعدادات التشغيل</h3>
+          <div class="toggle-row"><span class="toggle-row__label">الحجز مفتوح</span><label class="switch"><input type="checkbox" id="toggleBooking"><span class="switch__track"></span></label></div>
+          <div class="toggle-row"><span class="toggle-row__label">تشغيل 24/7</span><label class="switch"><input type="checkbox" id="toggle247"><span class="switch__track"></span></label></div>
+          <div class="toggle-row"><span class="toggle-row__label">تنبيهات السعة</span><label class="switch"><input type="checkbox" id="toggleAlerts"><span class="switch__track"></span></label></div>
+          <div class="toggle-row"><span class="toggle-row__label">النسخة الإنجليزية</span><label class="switch"><input type="checkbox" id="toggleEnglish"><span class="switch__track"></span></label></div>
+        </div>
+      </div>
+
+      <!-- ═══════ SECTION: Spaces ═══════ -->
+      <div class="admin-section" id="section-spaces">
+        <div class="admin-panel">
+          <h3>Workspace Control</h3>
+          <p style="color:var(--color-muted);margin-bottom:var(--sp-4)">تحكم تفصيلي في كل مساحة بشكل مستقل.</p>
+          <div id="spacesList"></div>
+        </div>
+      </div>
+
+    </div><!-- /admin-main -->
+  </div><!-- /admin-shell -->
+
+  <script src="js/state.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/admin.js"></script>
+  <style>
+    @media (max-width: 980px) {
+      #sidebarToggle { display: inline-flex !important; }
+    }
+  </style>
+</body>
+</html>
