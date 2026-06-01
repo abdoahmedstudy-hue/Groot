@@ -21,3 +21,5 @@ Allow: /
 
 User-agent: Googlebot
 Allow: /
+
+Sitemap: https://abdoahmedstudy-hue.github.io/Groot/sitemap.xml
